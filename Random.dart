@@ -33,7 +33,7 @@ class _RandomNumberGameState extends State<RandomNumberGame> {
   }
 
   void _generateRandomNumber() {
-    _randomNumber = Random().nextInt(100) + 1; // สุ่มเลขระหว่าง 1 ถึง 100
+    _randomNumber = Random().nextInt(9) + 1; // สุ่มเลขระหว่าง 1 ถึง 9
   }
 
   void _checkAnswer() {
@@ -81,7 +81,7 @@ class _RandomNumberGameState extends State<RandomNumberGame> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
-              "เดาตัวเลข (1-100)",
+              "เดาตัวเลข (1-9)",
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 20),
